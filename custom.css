@@ -1,21 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap');
 
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Cormorant Garamond', Georgia, serif !important;
-    font-weight: 300 !important;
+    font-family: 'Poppins', sans-serif !important;
 }
-p{
-    font-family: 'DM Sans', sans-serif !important;
+
+p, a{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 200 !important;
 }
-#BtnCart span{
-    display: none !important;
+
+#columns:nth-of-type(3) .columns-container {
+    background-color: red !important;
 }
 .footer-details .fa{
     color: rgb(239, 183, 131) !important;
 }
+.footer-details tr td, .footer-details tr td a{
+    color: rgb(224, 217, 217) !important;
+}
 #BtnCart i{
-    background-color: rgb(239, 183, 131);
+    background-color: rgb(30, 117, 36);
     padding: 8px 10px !important;
+    color: white !important;
     border-radius: 5px !important;
 }
 .banner-title{
@@ -29,19 +39,21 @@ p{
     letter-spacing: 2px !important;
 }
 .topheader-navholder{
-    background-color: #4e7123c8 !important;
+    background-color: rgb(36, 53, 10) !important;
+    /* background: linear-gradient(90deg,rgba(76,188,61,0.581), rgb(52, 100, 11)); */
 }
 .welcome-strip::before{
     content: "🌿";
 }
 .welcome-strip{
-    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    /* font-family: 'DM Sans', sans-serif !important; */
 }
 .columns-container{
     background-color: #f5f9f0 !important;
 }
 .footer-center{
-    background-color: #f5f9f0 !important;
+    /* background-color: #f5f9f0 !important; */
+    background-color: rgb(36, 53, 10);  
 }
 .carousel{
     background: linear-gradient(135deg, #f5f9f0 0%, #fdfcf8 100%) !important;
@@ -53,28 +65,37 @@ p{
     margin-top: 10px !important;
 }
 .MenuLink , .dropdown{
-    font-family: 'DM Sans', sans-serif !important;
+    /* font-family: 'DM Sans', sans-serif !important; */
     letter-spacing: 1px !important;
     text-transform: capitalize !important;
 }
 .exe-thumbs::after{
-    font-family: 'DM Sans', sans-serif !important;
+    /* font-family: 'DM Sans', sans-serif !important; */
 }
 .exe-thumbs::before{
-    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    /* font-family: 'Cormorant Garamond', Georgia, serif !important; */
 }
 .exe-thumbs h4{
-    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    /* font-family: 'Cormorant Garamond', Georgia, serif !important; */
 }
 .exe-thumbs p{
-    font-family: 'DM Sans', sans-serif !important;
+    /* font-family: 'DM Sans', sans-serif !important; */
+    font-size: 14px !important;
+    letter-spacing: 1px !important;
+    color:black !important;
 }
-.product-name{
-    font-family: 'DM Sans', sans-serif !important;
+body .product-name{
+    /* font-family: 'DM Sans', sans-serif !important; */
+    font-size: 16px !important;
+    font-weight: 600 !important;
 }
  .acc-it tr td{
             border-bottom: 1px solid rgb(239, 183, 131) !important;
             padding: 5px 0 !important;
+            color: rgb(224, 217, 217);
+        }
+        .infor-it li a{
+            color: rgb(224, 217, 217);
         }
         .infor-it li{
             margin-left: 20px !important;
@@ -90,6 +111,18 @@ p{
     #top-header{
         margin: 0 !important;
         width: 100% !important;
+        min-height: 70px !important;
+        display: flex;
+        align-items: stretch;
+    }
+    #top-header .header-main{
+        width: 100% !important;
+        min-height: inherit !important;
+        display: flex;
+        align-items: center;
+    }
+    #top-header .header-main > .container{
+        min-height: 60px !important;
     }
     #vp_bodycontent .container{
         width: 100% !important;
@@ -100,27 +133,35 @@ p{
         align-items: center;
         justify-content: center;
     }
-    #BtnCart i{
-        background-color: rgb(53, 111, 20);
-        padding: 8px 10px !important;
+    #BtnCart span{
+        border-bottom: none !important;
+        display: none !important;
+    }
+    .ViewCart{
+        margin-right: -20px !important;
+    }
+    #BtnCart {
+        /* background-color: rgb(53, 111, 20); */
+        padding: 14px 12px !important;
         position: absolute !important;
-        right: 80px !important;
-        top: 12px !important;
+        width: max-content !important;
+        right: 74px !important;
+        top: 18px !important;
         color:white !important;
         border-radius: 5px !important;
     }
-    .logo{
-        height: 20px;
+    header{
+        position: relative !important;
     }
-    .logo .hd-logo::before{
+    /* .logo .hd-logo::before{
         content: "Ready Florists" !important;
         display: block;
         font-size: 16px !important;
         margin-top: -30px;
         color: black !important;
-        font-family: 'Playfair Display', serif !important;
-    }
-    .logo .hd-logo::after{
+        
+    } */
+    /* .logo .hd-logo::after{
         content: "Arlington, Virginia" !important;
         display: block;
         color: orange !important;
@@ -128,13 +169,17 @@ p{
         text-transform: uppercase !important;
         font-size: 10px !important;
         margin-top: -78px !important;
-        font-family: 'Lora', serif !important; 
-    }
+    } */
     .contact_us{
         display: none !important;
     }
-    .logo img{
-        display: none !important;
+    [class~=home-1] [class~=header-main] [class~=logo]{
+        mix-blend-mode: multiply !important;
+        /* background-color: red !important; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80px !important;
     }
     .header-main .container .row{
         display: flex;
@@ -148,13 +193,13 @@ p{
         flex-direction: column !important;
     }
     .dropdown:nth-of-type(1) .custom-dropdown{
-        background-color: rgba(32, 56, 23, 0.537) !important;
+        background-color: rgba(32, 56, 23, 0.849) !important;
         position: absolute !important;
         border: none;
         left: 638px !important;
     }
     .dropdown:nth-of-type(2) .custom-dropdown{
-        background-color: rgba(32, 56, 23, 0.537) !important;
+        background-color: rgba(32, 56, 23, 0.849) !important;
         position: absolute !important;
         border: none;
         left: 963px !important;
@@ -169,9 +214,19 @@ p{
         padding: 5px 10px !important;
         width: 250px !important;
     }
+    .header-main .container .row{
+        align-items: center !important;
+    }
     .header-main .container .row .pull-right{
         width: 80% !important;
+        margin: 0px !important;
         /* background-color: red; */
+    }
+    .contact_phone::before{
+        content: "☎";
+        display: inline-block !important;
+        color: black;
+        margin-right: 5px !important;
     }
     .header-main .container .row .pull-right .col-md-10{
         width: 100% !important;
@@ -211,16 +266,19 @@ p{
     }
     .carousel-item .items-cont .text-cont h2::before{
         content: "❀ Signature Floral Studio";
-        background-color: rgba(76, 188, 61, 0.581)  !important;
+        background-color: rgba(0, 1, 0, 0.804) !important;
+        /* background: linear-gradient(rgba(76,188,61,0.581), rgb(52, 100, 11)); */
         font-size: 16px !important;
         border-radius: 30px !important;
+        font-weight: 200 !important;
         width: max-content !important;
-        padding: 10px 20px !important;
+        padding: 2px 20px !important;
         color: white !important;
         display: block !important;
     }
     .carousel-item .items-cont .text-cont h2{
         font-size: 70px !important;
+        font-weight: 600 !important;
         margin: 8px 0 !important;
     }
     .carousel-item .items-cont .text-cont h3{
@@ -228,7 +286,8 @@ p{
         text-transform: capitalize;
     }
     .carousel-item .items-cont .text-cont h3::after{
-        content: "In Every Petal";
+        content: "In every petal..";
+        color: rgb(36, 53, 10) !important;
         margin-left: 10px;
     }
     .carousel-item .items-cont .text-cont p{
@@ -259,9 +318,9 @@ p{
             background: #5c7a52;
             color: #fff;
             text-align: center;
-            padding: 12px 0px;
-            font-family: 'Jost', sans-serif;
-            font-size: 14px !important;
+            padding: 20px 0px;
+            /* font-family: 'Jost', sans-serif; */
+            font-size: 16px !important;
             font-weight: 500;
         }
 
@@ -269,19 +328,20 @@ p{
         .welcome-strip a {
             color: #fff;
             background-color: transparent;
-            text-transform: lowercase;
+            text-transform: capitalize;
             font-weight: 200;
             margin-left: 10px;
+            background-color: rgb(36, 53, 10);
             padding: 6px 14px;
-            border: 1px solid #fff;
             border-radius: 4px;
+            font-size: 14px !important;
             transition: all 0.3s ease;
         }
 
         /* Hover */
         .welcome-strip a:hover {
             background: #fff;
-            color: #e91e63;
+            color: black;
         }
 
         /* Card */
@@ -292,17 +352,21 @@ p{
         }
         .catagory-block{
             display: flex;
-            gap: 10px;
+            gap: 20px;
             justify-content: center;
             align-items: center;
         }
         .catagory-block .col-lg-4{
             padding: 0 !important;
         }
+        .description span{
+            display: none !important;
+        }
         .product-container {
             width: 380px;
             height: 500px;
             overflow: hidden;
+            border-radius: 30px !important;
             transition: all 0.3s ease;
             box-shadow: 0 8px 20px rgba(0,0,0,0.06);
             margin-bottom: 25px;
@@ -379,7 +443,10 @@ p{
             font-weight: 200;
             letter-spacing: 1px;
             color: #111 !important;
-            font-family: 'Jost', sans-serif !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            white-space: nowrap !important;
+            /* font-family: 'Jost', sans-serif !important; */
             transition: 0.3s;
         }
 
@@ -391,17 +458,18 @@ p{
         .product-box .btn {
             display: inline-block;
             padding: 10px 22px;
-            font-size: 8px;
-             background: linear-gradient(0deg, #55654d 0%);
+            letter-spacing: normal !important;
+            font-size: 12px;
+            text-transform: capitalize  !important;
+            background-color: rgb(36, 53, 10) !important;
             color: #fff !important;
             border-radius: 6px;
             transition: all 0.3s ease;
-            margin-top: 3px;
+            margin-top: 8px;
         }
 
         .product-box .btn:hover {
-            background: #e91e63;
-            transform: translateY(-2px);
+            opacity: 0.5;
         }
         /* Only products */
         .prod-title + center + br + .catagory-block {
@@ -412,9 +480,12 @@ p{
         .prod-title + center + br + .catagory-block .col-lg-3{
             padding: 5px;
         }
+        .prod-title + center + br + .catagory-block .right-block{
+            background-color: rgba(36, 53, 10, 0.833);
+        }
         .prod-title + center + br + .catagory-block .product-container {
             width: 100% !important;
-            height: 400px !important;
+            height: 360px !important;
             transition: all 0.3s ease;
             box-shadow: 0 8px 20px rgba(135, 120, 96, 0.06);
             margin-bottom: 20px;
@@ -429,7 +500,7 @@ p{
             border-top: 1px solid rgb(239, 183, 131);
         }
         .prod-title + center + br + .catagory-block .product-image-container img {
-            height: 320px !important;
+            height: 280px !important;
             object-fit: contain !important;
         }
         .prod-title + center + br + .catagory-block{
@@ -443,10 +514,17 @@ p{
             height: 20px;
         }
         .prod-title + center + br + .catagory-block .product-container .product-name{
-            font-size: 13px !important;
+            font-size: 14px !important;
+            color: white !important;
+            overflow: hidden !important;
+            text-overflow: ellipsis !important;
+            white-space: nowrap !important;
+            font-weight: 600 !important;
         }
         .prod-title + center + br + .catagory-block .product-container .product-price{
             font-size: 13px !important;
+            color: white !important;
+            font-weight: bold;
         }
         .prod-title + center + br + .catagory-block .product-container .content_price{
             margin-top: 3px !important;
@@ -458,11 +536,17 @@ p{
         }
         footer .title_block{
             font-size: 22px !important;
+            color: white;
             border-bottom: 1px solid rgb(239, 183, 131) !important;
         }
         body .home-title{
             margin-top: 60px !important;
         } 
+        #vp_bodycontent .home-title{
+            font-size: 33px !important;
+            font-family: "poppins",sans-serif !important;
+
+        }
 
     }
     /* Iconic Thumbs */
@@ -476,16 +560,17 @@ p{
     padding: 80px 50px !important;
     flex-direction: row;
     /* background-color: #2a2a2a; */
-    background-color: white;
+    background-color: rgb(36, 53, 10);
     justify-content: center !important;
     align-items: center;
-    gap: 30px !important;
+    gap: 20px !important;
 }
 .exe-thumbs .row > div {
-    padding: 3.5% 10px !important;
-    width: 370px !important;
+    padding: 2.5% 10px !important;
+    width: 380px !important;
     height: max-content !important;
     text-align: center !important;
+    backdrop-filter: blur(20px) !important;
     background-color: rgb(255, 255, 255);
     transition: 0.3s ease;
     position: relative !important;
@@ -526,6 +611,8 @@ p{
     text-transform: lowercase !important;
     letter-spacing: 1px !important;
     margin: 10px 0 !important;
+    color: #111 !important;
+    font-size: 22px !important;
     margin-top: 18px !important;
 }
 
@@ -541,7 +628,7 @@ body .exe-thumbs .col-md-4:last-child{
     width: 300px !important;
 }
 .exe-thumbs p{
-    font-size: 14px !important;
+    font-size: 13px !important;
     font-weight: 200 !important;
 }
 .exe-thumbs .row div:nth-of-type(1) p::after{
@@ -549,6 +636,7 @@ body .exe-thumbs .col-md-4:last-child{
     text-align: center !important;
     visibility: visible !important;
     margin-top: -20px !important;
+    color: black !important;
     display: block;
 }
 .exe-thumbs .row div:nth-of-type(2) p{
@@ -561,6 +649,7 @@ body .exe-thumbs .col-md-4:last-child{
     text-align: center !important;
     visibility: visible !important;
     margin-top: -20px !important;
+    color: black !important;
     display: block;
 }
 .exe-thumbs .row div:nth-of-type(3) p{
@@ -572,6 +661,7 @@ body .exe-thumbs .col-md-4:last-child{
     content: "Complimentary same-day delivery on every order. Fresh flowers, at your door, when it matters most.";
     text-align: center !important;
     visibility: visible !important;
+    color: black !important;
     margin-top: -20px !important;
     display: block;
 }
@@ -579,10 +669,9 @@ body .exe-thumbs .col-md-4:last-child{
     cursor: pointer;
 }
 .exe-thumbs img {
-    width: 62px !important;
-    height: 62px !important;
+    width: 102px !important;
+    height: 102px !important;
     border-radius: 50% !important;
-    border:15px solid #edf4e6 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -590,6 +679,7 @@ body .exe-thumbs .col-md-4:last-child{
 .exe-thumbs::before{
     content: "Crafted with Love & Care" !important;
     position: absolute !important;
+    color: white !important;
     top: 100px !important;
     font-size: 30px;
     left: 50% !important;
@@ -597,13 +687,14 @@ body .exe-thumbs .col-md-4:last-child{
 }
 .exe-thumbs::after{
     content: "Why Choose Us";
+    color: white !important;
     position: absolute !important;
     top: 70px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
 }
 .home-title{    
-    font-family: 'Cormorant Garamond', Georgia, serif !important;
+    /* font-family: 'Cormorant Garamond', Georgia, serif !important; */
     margin-top: 6rem !important;
     font-weight: 600;
 }
@@ -629,9 +720,9 @@ body .exe-thumbs .col-md-4:last-child{
 }
 .parallax-right-content h3{
     color: #e8e0d4;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 600;
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    /* font-family: 'Cormorant Garamond', Georgia, serif; */
     font-size: 30px;
 }
 .parallax-right-content h3::after{
@@ -650,22 +741,28 @@ body .exe-thumbs .col-md-4:last-child{
     transition: all 0.7s ease;
 }
 .parallax-right-content p{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: rgb(255, 255, 255);
-    font-weight: 600;
+    font-weight: 300 !important;
+    /* font-family: 'DM Sans', sans-serif !important; */
     margin-bottom: 40px;
 }
 .parallax-right-content a{
     color: rgb(48, 75, 15);
     text-decoration: none;
     background-color: white;
-    font-family: 'Jost', sans-serif;
+    /* font-family: 'Jost', sans-serif; */
     text-transform: lowercase;
     padding: 10px 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border-radius: 5px;
+    letter-spacing: normal !important;
 }
 @media (max-width: 576px){
+    #top-header{
+        width: 100% !important;
+        min-height: auto !important;
+    }
     .logo{
         width: 100% !important;
         background-color: white !important;
@@ -676,7 +773,7 @@ body .exe-thumbs .col-md-4:last-child{
     }
     body .home-title{
         margin-top: 30px !important;
-        font-size: 18px !important;
+        font-size: 14px !important;
     }
     body .home-title + .prod-title{
         font-size: 14px !important;
@@ -698,9 +795,22 @@ body .exe-thumbs .col-md-4:last-child{
         text-align: center !important;
     }
     .carousel-inner .text-cont p{
-        font-size: 13px !important;
-        text-align: justify !important;
+        font-size: 12px !important;
+        text-align: center !important;
         letter-spacing: 1px;
+    }
+    .exe-thumbs .row div{
+        padding: 30px 10px !important;
+    }
+    .exe-thumbs img{
+        height: 60px !important;
+        width: 60px !important;
+    }
+    p::after{
+        font-size: 10px !important;
+    }
+    .exe-thumbs h4{
+        font-size: 14px !important;
     }
     .carousel-inner .shop-btn{
         font-size: 10px !important;
@@ -716,7 +826,7 @@ body .exe-thumbs .col-md-4:last-child{
         padding: 8% 10px !important;
     }
     .welcome-strip{
-        font-size: 10px !important;
+        font-size: 12px !important;
     }
     .welcome-strip a{
         padding: 3px 8px !important;
@@ -775,6 +885,7 @@ body .exe-thumbs .col-md-4:last-child{
             width: 100% !important;
             height: max-content !important;
             transition: all 0.3s ease;
+            border-radius: 10px !important;
             box-shadow: 0 8px 20px rgba(135, 120, 96, 0.06);
             margin-bottom: 20px;
             position: relative;
@@ -818,6 +929,9 @@ body .exe-thumbs .col-md-4:last-child{
         .product-price{
             font-size: 10px !important;
             padding: 3px 0 !important;
+        }
+        .prod-title + center + br + .catagory-block .product-container .left-block{
+            height: auto !important;
         }
         .prod-title + center + br + .catagory-block .product-container .right-block{
             min-height: max-content !important;
@@ -866,13 +980,20 @@ body .exe-thumbs .col-md-4:last-child{
         }
            .product-container {
             width: 100%;
-            height: 100%;
+            height: 100% !important;
             overflow: hidden;
             transition: all 0.3s ease;
             box-shadow: 0 8px 20px rgba(0,0,0,0.06);
             margin-bottom: 25px;
+            border-radius: 30px !important;
             position: relative;
             background-color: white;
+        }
+        .product-container .left-block{
+            height: 240px !important;
+        }
+        #footer .block .title_block{
+            border-top: none !important;
         }
         a.product_img_link img
          {
@@ -889,7 +1010,7 @@ body .exe-thumbs .col-md-4:last-child{
             overflow: hidden;
         }
         a.product_img_link img.img-responsive{
-            height: 100% !important;
+            height: 250px !important;
         }
         .product-image-container img {
             object-fit: cover;
@@ -900,33 +1021,32 @@ body .exe-thumbs .col-md-4:last-child{
         .product_img_link{
             border: none !important;
         }
-
+        #BtnCart span{
+            display: none !important;
+        }
         /* Overlay */
         .product-image-container .description {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            background: rgba(0,0,0,0.5);
+            background: rgba(9, 10, 9, 0.5) !important;
             color: #fff;
             text-align: center;
             opacity: 0;
             transition: 0.3s ease;
         }
-
-        .product-container:hover .description {
-            opacity: 1;
-        }
         footer .title_block{
             font-size: 20px !important;
             margin-bottom: 10px !important;
+            color: white !important;
             border-bottom: 1px solid rgb(239, 183, 131) !important;
         }
         .dropdown-menu li{
             padding: 5px 0 !important;
-            font-family: 'DM Sans', sans-serif !important;
+            /* font-family: 'DM Sans', sans-serif !important; */
             letter-spacing: 1px !important;
-            font-style: 14px !important;;
+            font-style: 14px !important;
         }
         /* Text Content */
         .right-block {
@@ -947,10 +1067,12 @@ body .exe-thumbs .col-md-4:last-child{
         /* Button */
         .product-box .btn {
             display: inline-block;
+            letter-spacing: 0px !important;
             padding: 10px 30px !important;
             font-size: 8px;
             background: linear-gradient(0deg, #55654d 0%);
             color: #fff !important;
+            text-transform: capitalize !important;
             border-radius: 6px;
             transition: all 0.3s ease;
             margin-top: 3px;
@@ -984,4 +1106,7 @@ body .exe-thumbs .col-md-4:last-child{
             position: relative !important;
         }
 }
+
+
+
 
