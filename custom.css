@@ -803,6 +803,9 @@ body .exe-thumbs .col-md-4:last-child{
     letter-spacing: normal !important;
 }
 @media (max-width: 576px){
+    button, p, tr td, span, a{
+        font-size: 12px !important;
+    }
     #top-header{
         width: 100% !important;
         min-height: auto !important;
@@ -1199,7 +1202,7 @@ body .exe-thumbs .col-md-4:last-child{
             position: absolute !important;
             right: 40px !important;
             z-index: 10 !important;
-            top: 137px !important;
+            top: 138px !important;
         }
         .contact_us{
             /* display: none !important; */
